@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-like": "/components/like/like",
+    "v-tag": "/components/tag/tag"
+  },
+  "component": true
+}

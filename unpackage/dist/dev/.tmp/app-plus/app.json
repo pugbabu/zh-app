@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/alarm/alarm",
+    "pages/work-sheet/work-sheet",
+    "pages/work-detail/work-detail",
+    "pages/report/report",
+    "pages/about/about",
+    "pages/alarm/alarm",
+    "pages/book/book",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "旧岛小厅",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#2F85FC",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/work-sheet/work-sheet",
+        "iconPath": "static/tab/book.png",
+        "selectedIconPath": "static/tab/book@highlight.png",
+        "text": "工单"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "iconPath": "static/tab/my.png",
+        "selectedIconPath": "static/tab/my@highlight.png",
+        "text": "报表"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "static/tab/classic.png",
+        "selectedIconPath": "static/tab/classic@highlight.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "小众科技",
+  "compilerVersion": "2.3.6",
+  "usingComponents": {}
+}

@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['onLike',['$event']]]]]}}" class="like-container" bindtap="__e"><image src="{{src}}"></image><text>{{countData}}</text></view>

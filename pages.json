@@ -1,0 +1,87 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/alarm/alarm",
+			"style": {
+				"navigationBarTitleText": "报警"
+			}
+		},
+		{
+			"path": "pages/work-sheet/work-sheet",
+			"style": {
+				"navigationBarTitleText": "工单"
+			}
+		},
+		{
+			"path": "pages/work-detail/work-detail",
+			"style": {
+				"navigationBarTitleText": "维修工单"
+			}
+		},
+		{
+			"path": "pages/report/report",
+			"style": {
+				"navigationBarTitleText": "报表"
+			}
+		},
+		{
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/alarm/alarm",
+			"style": {
+				"navigationBarTitleText": "流行"
+			}
+		},
+		{
+			"path": "pages/book/book",
+			"style": {
+				"navigationBarTitleText": "书籍"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "喜欢"
+			}
+		}
+		
+	],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#2F85FC",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/work-sheet/work-sheet",
+			"iconPath": "static/tab/book.png",
+			"selectedIconPath": "static/tab/book@highlight.png",
+			"text": "工单"
+		},{
+			"pagePath": "pages/report/report",
+			"iconPath": "static/tab/my.png",
+			"selectedIconPath": "static/tab/my@highlight.png",
+			"text": "报表"
+		},{
+			"pagePath": "pages/about/about",
+			"iconPath": "static/tab/classic.png",
+			"selectedIconPath": "static/tab/classic@highlight.png",
+			"text": "我的"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "旧岛小厅",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#FFFFFF"
+	}
+}

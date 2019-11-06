@@ -1,0 +1,81 @@
+<template>
+	<view class="book-item-container">
+		<image :src="book.image"></image>
+		<view class="description">
+			<text class='title'>{{book.title}}</text>
+			<text class='author'>{{book.author}}</text>
+			<view v-if="showLike" class="foot">
+				<text class="footer">{{book.fav_nums}} 喜欢</text>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		props: ['book'],
+		data() {
+			return {
+				showLike: true
+			}
+		}
+	}
+</script>
+
+<style>
+	.book-item-container {
+		margin-top: 30rpx;
+		display: flex;
+		position: relative;
+		box-shadow: 2px 2px 3px #e3e3e3;
+		flex-direction: column;
+		width: 240rpx;
+		height: 360rpx;
+	}
+
+	.book-item-container image {
+		width: 100%;
+		height: 100%;
+		border-radius: 2px;
+	}
+
+	.description {
+		width: 216rpx;
+		position: absolute;
+		bottom: 0;
+		background-color: #fff;
+		padding: 5rpx 10rpx 8rpx 15rpx;
+		font-size: 24rpx;
+		display: flex;
+		flex-direction: column;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+
+	.title {
+		margin-top: 10rpx;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.author {
+		font-size: 20rpx;
+		color: #999999;
+		margin-bottom: 10rpx;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.foot {
+		font-size: 20rpx;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.footer {
+		color: #666666;
+	}
+</style>

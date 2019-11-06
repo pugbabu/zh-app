@@ -1,0 +1,1 @@
+<view class="book-item-container"><image src="{{book.image}}"></image><view class="description"><text class="title">{{book.title}}</text><text class="author">{{book.author}}</text><block wx:if="{{showLike}}"><view class="foot"><text class="footer">{{book.fav_nums+" 喜欢"}}</text></view></block></view></view>

@@ -1,0 +1,74 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* components/like/index.wxss */
+.like-container {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	padding: 10rpx;
+	/* width: 90rpx; */
+}
+.like-container image {
+	width: 32rpx;
+	height: 28rpx;
+}
+.like-container text {
+	/* 苹方  思源 */
+	/* font-family: "PingFangSC-Thin"; */
+	font-size: 24rpx;
+	line-height: 24rpx;
+	color: #bbbbbb;
+	position: relative;
+	bottom: 10rpx;
+	left: 6rpx;
+}
+
