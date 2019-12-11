@@ -15,6 +15,10 @@
 
 /*每个页面公共css */
 uni-page-head .uni-page-head{
-	background: #5aa2e8 !important;
+	/* background: #0084ff !important; */
+	/* color: #fff !important; */
+}
+input{
+	caret-color: #5886fc;
 }
 

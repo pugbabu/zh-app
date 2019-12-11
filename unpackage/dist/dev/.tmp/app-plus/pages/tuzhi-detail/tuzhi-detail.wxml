@@ -1,0 +1,1 @@
+<view class="index"><image src="{{src}}" mode="widthFix" data-event-opts="{{[['tap',[['preImg',['$0'],['index']]]]]}}" bindtap="__e"></image><view class="detail-btn-view"><view data-event-opts="{{[['tap',[['download',['$event']]]]]}}" class="download" bindtap="__e"></view></view></view>

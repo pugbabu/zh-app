@@ -1,9 +1,119 @@
 {
 	"pages": [
 		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#5886fc"
+			}
+		},
+		{
+			"path": "pages/tuzhi-detail/tuzhi-detail",
+			"style": {
+				"navigationBarTitleText": "点击图片预览",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/class-detail/class-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/tuzhi/tuzhi",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/knowledge/knowledge",
+			"style": {
+				"navigationBarTitleText": "知识库",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/tabbar-upload/tabbar-upload",
+			"style": {
+				"navigationBarTitleText": "上传",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/monitor/monitor",
+			"style": {
+				"navigationBarTitleText": "监测",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#5886fc"
+			}
+		},
+		{
+			"path": "pages/trouble-manage/trouble-manage",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#F7F8FA"
+			}
+		},
+		{
+			"path": "pages/electronic/electronic",
+			"style": {
+				"navigationBarTitleText": "电子报班",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#5886fc"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/material/material",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#5886fc"
+			}
+		},
+		{
+			"path": "pages/new-trouble/new-trouble",
+			"style": {
+				"navigationBarTitleText": "新增故障",
+				"navigationBarBackgroundColor": "#F7F8FA"
+			}
+		},
+		{
+			"path": "pages/shift-repair/shift-repair",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#5886fc"
+			}
+		},
+		{
+			"path": "pages/success/success",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
 			"path": "pages/login/login",
 			"style": {
-				"navigationBarTitleText": "登录"
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#5886fc",
+				"navigationBarTextStyle": "white"
 			}
 		},
 		{
@@ -27,7 +137,7 @@
 		{
 			"path": "pages/report/report",
 			"style": {
-				"navigationBarTitleText": "报表"
+				"navigationBarTitleText": "监测"
 			}
 		},
 		{
@@ -57,25 +167,25 @@
 		
 	],
 	"tabBar": {
-		"color": "#000000",
-		"selectedColor": "#2F85FC",
-		"backgroundColor": "#FFFFFF",
+		"color": "#333333",
+		"selectedColor": "#1687e8",
+		"backgroundColor": "#ffffff",
 		"borderStyle": "black",
 		"list": [{
-			"pagePath": "pages/work-sheet/work-sheet",
-			"iconPath": "static/tab/book.png",
-			"selectedIconPath": "static/tab/book@highlight.png",
-			"text": "工单"
+			"pagePath": "pages/home/home",
+			"iconPath": "static/tab/home.png",
+			"selectedIconPath": "static/tab/home-active.png",
+			"text": "首页"
 		},{
-			"pagePath": "pages/report/report",
-			"iconPath": "static/tab/my.png",
-			"selectedIconPath": "static/tab/my@highlight.png",
-			"text": "报表"
+			"pagePath": "pages/material/material",
+			"iconPath": "static/tab/wuliao.png",
+			"selectedIconPath": "static/tab/wuliao-active.png",
+			"text": "物料库存"
 		},{
-			"pagePath": "pages/about/about",
-			"iconPath": "static/tab/classic.png",
-			"selectedIconPath": "static/tab/classic@highlight.png",
-			"text": "我的"
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/tab/mine.png",
+			"selectedIconPath": "static/tab/mine-active.png",
+			"text": "个人中心"
 		}]
 	},
 	"globalStyle": {

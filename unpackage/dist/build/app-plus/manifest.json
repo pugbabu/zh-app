@@ -5,9 +5,9 @@
     "iPad"
   ],
   "id": "__UNI__F62111E",
-  "name": "unittec-app",
+  "name": "众合智能运维",
   "version": {
-    "name": "1.0.1",
+    "name": "1.0.3",
     "code": "100"
   },
   "description": "众合科技智能运维app",
@@ -78,6 +78,13 @@
           }
         }
       },
+      "splashscreen": {
+        "android": {
+          "xxhdpi": "/Users/pugbabu/231573012730_.pic_hd.png",
+          "xhdpi": "/Users/pugbabu/babu/720*1242.png",
+          "hdpi": "/Users/pugbabu/babu/480*762.png"
+        }
+      },
       "google": {
         "permissions": [
           "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
@@ -115,43 +122,50 @@
     },
     "allowsInlineMediaPlayback": true,
     "safearea": {
-      "background": "#FFFFFF",
+      "background": "#ffffff",
       "bottom": {
         "offset": "auto"
       }
     },
     "uni-app": {
-      "compilerVersion": "2.3.6",
+      "compilerVersion": "2.4.2",
       "control": "v8",
-      "nvueCompiler": "weex",
-      "renderer": "auto"
+      "nvueCompiler": "uni-app",
+      "renderer": "auto",
+      "nvue": {
+        "flex-direction": "column"
+      }
     },
     "tabBar": {
-      "color": "#000000",
-      "selectedColor": "#2F85FC",
-      "backgroundColor": "#FFFFFF",
+      "color": "#333333",
+      "selectedColor": "#1687e8",
+      "backgroundColor": "#ffffff",
       "borderStyle": "rgba(0,0,0,0.4)",
       "list": [
         {
-          "pagePath": "pages/work-sheet/work-sheet",
-          "iconPath": "static/tab/book.png",
-          "selectedIconPath": "static/tab/book@highlight.png",
-          "text": "工单"
+          "pagePath": "pages/home/home",
+          "iconPath": "static/tab/home.png",
+          "selectedIconPath": "static/tab/home-active.png",
+          "text": "首页"
         },
         {
-          "pagePath": "pages/report/report",
-          "iconPath": "static/tab/my.png",
-          "selectedIconPath": "static/tab/my@highlight.png",
-          "text": "报表"
+          "pagePath": "pages/material/material",
+          "iconPath": "static/tab/wuliao.png",
+          "selectedIconPath": "static/tab/wuliao-active.png",
+          "text": "物料库存"
         },
         {
-          "pagePath": "pages/about/about",
-          "iconPath": "static/tab/classic.png",
-          "selectedIconPath": "static/tab/classic@highlight.png",
-          "text": "我的"
+          "pagePath": "pages/mine/mine",
+          "iconPath": "static/tab/mine.png",
+          "selectedIconPath": "static/tab/mine-active.png",
+          "text": "个人中心"
         }
       ],
-      "height": "50px"
+      "height": "50px",
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 0
     }
   }
 }

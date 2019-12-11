@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "知识库",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "tu-zhi": "/components/tuzhi/tuzhi",
+    "shi-pin": "/components/shipin/shipin",
+    "tabbar-upload": "/components/tabbar-upload/tabbar-upload"
+  }
+}

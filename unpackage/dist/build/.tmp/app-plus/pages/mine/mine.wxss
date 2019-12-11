@@ -1,0 +1,97 @@
+
+.mine-head{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-family: GBK Regular;
+}
+.avatar{
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 50%;
+}
+.mine-nickname{
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+.mine-number{
+	font-size: 14px;
+	line-height: 20px;
+}
+.mine-content{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-top: 50px;
+}
+.mine-item{
+	width: 70%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.mine-item image{
+	width: 14px;
+	height: 14px;
+}
+.mine-text{
+	font-size: 14px;
+	font-family: GBK Regular;
+	line-height: 20px;
+	margin-left: 15px;
+}
+.quit-btn{
+	position: fixed;
+	bottom: 50px;
+	width: 600rpx;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #5886fc;
+	color: #5886fc;
+	border-radius: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+

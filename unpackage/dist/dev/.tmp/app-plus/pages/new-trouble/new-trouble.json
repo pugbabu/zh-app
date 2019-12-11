@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "新增故障",
+  "navigationBarBackgroundColor": "#F7F8FA",
+  "usingComponents": {
+    "ss-upload-image": "/components/ss-upload-image/ss-upload-image"
+  }
+}

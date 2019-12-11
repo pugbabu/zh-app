@@ -2,7 +2,7 @@
     "name" : "众合智能运维",
     "appid" : "__UNI__F62111E",
     "description" : "众合科技智能运维app",
-    "versionName" : "1.0.2",
+    "versionName" : "1.0.3",
     "versionCode" : "100",
     "transformPx" : false,
     "app-plus" : {
@@ -77,8 +77,8 @@
             "splashscreen" : {
                 "android" : {
                     "xxhdpi" : "/Users/pugbabu/231573012730_.pic_hd.png",
-                    "xhdpi" : "/Users/pugbabu/231573012730_.pic_hd.png",
-                    "hdpi" : "/Users/pugbabu/231573012730_.pic_hd.png"
+                    "xhdpi" : "/Users/pugbabu/babu/720*1242.png",
+                    "hdpi" : "/Users/pugbabu/babu/480*762.png"
                 }
             }
         }

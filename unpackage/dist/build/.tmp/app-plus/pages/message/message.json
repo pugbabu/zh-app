@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "消息",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "sun-tab": "/components/sun-tab/sun-tab"
+  }
+}

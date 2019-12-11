@@ -1,0 +1,32 @@
+
+.tuzhi-wrapper {
+	background: #fff;
+}
+.tuzhi-list {
+	/* padding: 50rpx 0; */
+}
+.tuzhi-item {
+	padding: 0 20rpx;
+	margin-bottom: 20rpx;
+	padding-bottom: 20rpx;
+}
+.tuzhi-title {
+	font-size: 16px;
+	line-height: 30px;
+	font-family: GBK Regular;
+	font-weight: 500;
+	margin-bottom: 20rpx;
+}
+.tuzhi-item image {
+	width: 100%;
+}
+.link-top {
+	position: fixed;
+	right: 40rpx;
+	bottom: 140rpx;
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	/* background: red; */
+}
+

@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/ss-upload-image/ss-upload-image"],{"2d90":function(e,t,n){"use strict";var a=n("ccf4"),u=n.n(a);u.a},"8fe5":function(e,t,n){"use strict";n.r(t);var a=n("990a"),u=n("edec");for(var r in u)"default"!==r&&function(e){n.d(t,e,function(){return u[e]})}(r);n("2d90");var o=n("2877"),c=Object(o["a"])(u["default"],a["a"],a["b"],!1,null,"5d5109a8",null);t["default"]=c.exports},"990a":function(e,t,n){"use strict";var a=function(){var e=this,t=e.$createElement;e._self._c},u=[];n.d(t,"a",function(){return a}),n.d(t,"b",function(){return u})},"9c84":function(e,t,n){"use strict";(function(e,n){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var a={props:{limit:{type:Number,default:5},url:{type:String,required:!0},name:{type:String,default:"file"},formData:{type:Object,default:function(){return{}}},header:{type:Object,default:function(){return{}}},fileList:{type:Array,default:function(){return[]}}},data:function(){return{}},methods:{chooseImage:function(){var t=this;e.chooseImage({success:function(a){console.log(n(a," at components/ss-upload-image/ss-upload-image.vue:58"));e.uploadFile({url:t.url,name:t.name,filePath:a.tempFilePaths[0],formData:t.formData,header:t.header,success:function(e){t.$emit("on-success",JSON.parse(e.data))},fail:function(e){t.$emit("on-error",e)}})}})},handleRemove:function(e){this.$emit("on-remove",e)}}};t.default=a}).call(this,n("6e42")["default"],n("0de9")["default"])},ccf4:function(e,t,n){},edec:function(e,t,n){"use strict";n.r(t);var a=n("9c84"),u=n.n(a);for(var r in a)"default"!==r&&function(e){n.d(t,e,function(){return a[e]})}(r);t["default"]=u.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/ss-upload-image/ss-upload-image-create-component',
+    {
+        'components/ss-upload-image/ss-upload-image-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('6e42')['createComponent'](__webpack_require__("8fe5"))
+        })
+    },
+    [['components/ss-upload-image/ss-upload-image-create-component']]
+]);                

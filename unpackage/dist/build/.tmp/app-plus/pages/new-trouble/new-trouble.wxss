@@ -1,0 +1,86 @@
+
+page{
+	background: #f7f8fa;
+}
+.register-btn{
+	position: fixed;
+	bottom: 30px;
+	width: 500rpx;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	text-align: center;
+	color: #FFFDEF;
+	background: #5886fc;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 16px;
+	font-family: GBK Regular;
+	line-height: 40px;
+}
+.register-content{
+	width: 660rpx;
+	/* height: 900rpx; */
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	background: #fff;
+	-webkit-box-shadow: 0 0 3px #C2C2C2;
+	        box-shadow: 0 0 3px #C2C2C2;
+	border-radius: 6px;
+	padding: 30rpx;
+}
+.trouble-name{
+	font-size: 14px;
+	color: #999;
+	font-family: GBK Regular;
+}
+.trouble-item{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20rpx;
+	margin-bottom: 30rpx;
+}
+.trouble-item-name{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.uni-input{
+	text-align: right;
+	color: #333;
+	font-size: 14px;
+}
+.input-placeholder{
+	color: #999;
+	font-size: 14px;
+	text-align: right;
+}
+.radio-wrapper{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-top: 20rpx;
+	padding-right: 20rpx;
+}
+
+

@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/sun-tab/sun-tab"],{"0910":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var u={name:"uni-tab",data:function(){return{average:0,back:!1}},props:{value:{type:Number,default:function(){return 0}},tabList:{type:Array,default:function(){return[]}},bgColor:{type:String,default:function(){return"#FFFFFF"}},defaultColor:{type:String,default:function(){return"#000000"}},activeColor:{type:String,default:function(){return"#1e9fff"}},rangeKey:{type:String,default:function(){return""}},scroll:{type:Boolean,default:function(){return!1}}},computed:{barLeft:function(){return this.value*this.average+21},barRight:function(){var t=this.tabList.length-this.value-1;return t*this.average}},created:function(){this.average=100/this.tabList.length},methods:{itemClick:function(t,e){if(this.value==t)return!1;this.value>t?this.back=!0:this.back=!1,this.$emit("update:value",t),this.$emit("change",{tab:e})}}};e.default=u},"0c27":function(t,e,n){"use strict";var u=function(){var t=this,e=t.$createElement;t._self._c},a=[];n.d(e,"a",function(){return u}),n.d(e,"b",function(){return a})},"28a5":function(t,e,n){},"28c8":function(t,e,n){"use strict";var u=n("28a5"),a=n.n(u);a.a},7539:function(t,e,n){"use strict";n.r(e);var u=n("0c27"),a=n("f822");for(var r in a)"default"!==r&&function(t){n.d(e,t,function(){return a[t]})}(r);n("28c8");var i=n("2877"),f=Object(i["a"])(a["default"],u["a"],u["b"],!1,null,"6e7cbddf",null);e["default"]=f.exports},f822:function(t,e,n){"use strict";n.r(e);var u=n("0910"),a=n.n(u);for(var r in u)"default"!==r&&function(t){n.d(e,t,function(){return u[t]})}(r);e["default"]=a.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/sun-tab/sun-tab-create-component',
+    {
+        'components/sun-tab/sun-tab-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('6e42')['createComponent'](__webpack_require__("7539"))
+        })
+    },
+    [['components/sun-tab/sun-tab-create-component']]
+]);                

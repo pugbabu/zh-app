@@ -1,112 +1,161 @@
-.login-wrapper {
-  width: 100%;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+.login-wrapper{
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: relative;
+	font-family: GBK Regular;
 }
-.login-head {
-  background: #0084ff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  color: #fff;
-  font-size: 16px;
-  height: 150px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+.login-head{
+	background: #5886fc;
+	width: 100%;
+	color: #fff;
+	font-size: 16px;
+	height: 250px;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 0 0 15% 15%;
+	text-align: center;
 }
-.login-wrapper .logo {
-  width: 280rpx;
-  height: 56rpx;
-  margin-bottom: 20px;
+.login-wrapper .logo{
+	width: 50px;
+	height: 50px;
+	margin-top: 40rpx;
+	/* display: inline-block; */
+	/* width: 280rpx;
+	height: 56rpx;
+	margin-bottom: 20px; */
 }
-.login-form {
-  width: 100%;
-  padding: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.form-item{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 48rpx;
+	position: relative;
 }
-.form-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30rpx;
+.form-item .title{
+	text-align: right;
+	width: 180rpx;
+	color: #17233d;
 }
-.form-item .title {
-  text-align: right;
-  width: 180rpx;
-  color: #17233d;
+.form-item-input{
+	background: #fff;
+	padding-left: 60rpx;
+	width: 100%;
+	height: 48px;
+	border-bottom: 1rpx solid #dbdcdd;
+	color: #333;
+	caret-color: #5886fc;
+	/* line-height: 24px; */
+	font-size: 14px;
+	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
-.form-item-input {
-  background: #fff;
-  width: 100%;
-  height: 48px;
-  padding-left: 10rpx;
-  border-bottom: 1rpx solid #ebebeb;
-  color: #1a1a1a;
-  line-height: 24px;
-  font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+.login-form{
+	width: 660rpx;
+	padding: 25px;
+	padding-bottom: 60px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	background: #fff;
+	-webkit-box-shadow: 0 0 20rpx #999;
+	        box-shadow: 0 0 20rpx #999;
+	border-radius: 10px;
 }
-.input-placeholder {
-  color: #8590a6;
+.input-placeholder{
+	color: #999;
 }
-.login-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30rpx;
+.error-placeholder{
+	color: #feb831;
 }
-.login-button {
-  width: 100%;
-  margin: 0 10rpx;
-  color: #fff;
-  background: #0084ff;
-  height: 40px;
-  border-radius: 3px;
-  font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+.login-item{
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 500rpx;
+	height: 40px;
+	border-radius: 40rpx;
 }
-.tip {
-  line-height: 1.5;
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-  color: #8590a6;
-  font-size: 12px;
+.login-button{
+	width: 100%;
+	/* margin: 0 10rpx; */
+	color: #fff;
+	background: #5886fc;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 16px;
+	font-family: GBK Regular;
+	line-height: 40px;
+	/* font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; */
+}
+.tip{
+	line-height: 1.5;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+	color: #8590a6;
+	font-size: 12px;
+}
+.statement{
+	position: fixed;
+	line-height: 2;
+	color: #333;
+	font-size: 12px;
+	bottom: 30px;
+	width: 80%;
+	text-align: center;
+	font-family: GBK Regular;
+}
+.icon{
+	height: 32rpx;
+	position: absolute;
+	width: 32rpx;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.connot-tip{
+	font-size: 12px;
+	position: absolute;
+	bottom: -60px;
+	line-height: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #333;
+}
+.logo-bottom{
+	position: fixed;
+	bottom: 30px;
+	width: 216px;
+	height: 26px;
 }
 

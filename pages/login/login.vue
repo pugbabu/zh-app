@@ -1,29 +1,33 @@
 <template>
 	<view class="login-wrapper">
 		<view class="login-head">
-			<image class="logo" src="../../static/zh_logo.png"></image>
-			<view>众合智相伴，运维无难事</view>
+			<!-- <image src="http://www.unittec.com/images/logo.png"></image> -->
+			<image class="logo" src="../../static/login/hz-ditie.png"></image>
+			<!-- <view>众合智相伴，运维无难事</view> -->
 		</view>
 		<form class="login-form">
 		                
 			<view class="form-item">
-				<!-- <view class="title">用户名：</view> -->
+				<image src="../../static/login/user.png" class="icon"></image>
 				<input v-if="!errorFlag" @blur="handleBlur" v-model="username" class="form-item-input" type="text" placeholderClass="input-placeholder" maxlength="20" placeholder="请输入用户名" name="username" />
 				<input v-else @blur="handleBlur" v-model="username" class="form-item-input" type="text" placeholderClass="error-placeholder" maxlength="20" placeholder="请输入用户名" name="username" />
 			</view>
 			<view class="form-item">
-				<!-- <view class="title">密码：</view> -->
+				<image src="../../static/login/password.png" class="icon"></image>
 				<input v-if="!pwdErrorFlag" @blur="handlePwdBlur"  v-model="password" type="password" class="form-item-input" name="password" placeholder-class="input-placeholder" placeholder="请输入密码" />
 				<input v-else="pwdErrorFlag" @blur="handlePwdBlur"  v-model="password" type="password" class="form-item-input" name="password" placeholder-class="error-placeholder" placeholder="请输入密码" />
 			</view>
-			<view class="form-item">
+		<!-- 	<view class="form-item">
 				<text class="tip">登录即同意《众合科技协议》《隐私保护指引》</text>
-			</view>
-			<view class="form-item">
+			</view> -->
+			<view class="login-item">
 				<button @tap="login" class="login-button">登录</button>
 				<!-- <button @tap="register" class="login-button" type="default">注册</button> -->
 			</view>
+			<view class="connot-tip">无法登录？联系我们</view>
 		</form>
+		<image class="logo-bottom" src="../../static/login/logo.png"></image>
+		<!-- <view class="statement">众合科技股份有限公司、浙江大学及宁波市轨道交通集团有限公司联合研制</view> -->
 	</view>
 </template>
 
@@ -42,7 +46,8 @@
 				if (!this.username) {
 					uni.showToast({
 					    title: '用户名不能为空',
-					    duration: 1000
+					    duration: 1000,
+						icon: 'none'
 					});
 					return
 				}
@@ -55,7 +60,7 @@
 					return
 				}
 				uni.switchTab({
-					url: '/pages/work-sheet/work-sheet'
+					url: '/pages/home/home'
 				})
 			},
 			register() {
@@ -76,45 +81,41 @@
 	}
 </script>
 
-<style lang="less">
+<style>
 .login-wrapper{
-	// background: #5aa2e8;
 	width: 100%;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	// padding-top: 100rpx;
+	position: relative;
+	font-family: GBK Regular;
 }
 .login-head{
-	background: #0084ff;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	background: #5886fc;
 	width: 100%;
 	color: #fff;
 	font-size: 16px;
-	height: 150px;
+	height: 250px;
 	align-items: center;
+	border-radius: 0 0 15% 15%;
+	text-align: center;
 }
 .login-wrapper .logo{
-	width: 280rpx;
+	width: 50px;
+	height: 50px;
+	margin-top: 40rpx;
+	/* display: inline-block; */
+	/* width: 280rpx;
 	height: 56rpx;
-	margin-bottom: 20px;
+	margin-bottom: 20px; */
 	
 }
-.login-form{
-	width: 100%;
-	padding: 16px;
-	box-sizing: border-box;
-	// margin-top: 100rpx;
-}
+
 .form-item{
 	display: flex;
-	margin-bottom: 30rpx;
-	// padding: 16px;
-	
+	margin-bottom: 48rpx;
+	position: relative;
 }
 .form-item .title{
 	text-align: right;
@@ -123,37 +124,56 @@
 }
 .form-item-input{
 	background: #fff;
+	padding-left: 60rpx;
 	width: 100%;
-	// border-radius: 5rpx;
 	height: 48px;
-	padding-left: 10rpx;
-	border-bottom: 1rpx solid #ebebeb;
-	// padding-bottom: 20rpx;
-	color: #1a1a1a;
-	line-height: 24px;
+	border-bottom: 1rpx solid #dbdcdd;
+	color: #333;
+	caret-color: #5886fc;
+	/* line-height: 24px; */
 	font-size: 14px;
 	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
+.login-form{
+	width: 660rpx;
+	padding: 25px;
+	padding-bottom: 60px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	box-shadow: 0 0 20rpx #999;
+	border-radius: 10px;
+	
+}
 .input-placeholder{
-	color: #8590a6;
+	color: #999;
 }
 .error-placeholder{
-	color: red;
+	color: #feb831;
 }
-.login-btn{
-	display: flex;
-	justify-content: center;
-	margin-top: 30rpx;
+.login-item{
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	transform: translateX(-50%);
+	width: 500rpx;
+	height: 40px;
+	border-radius: 40rpx;
 }
 .login-button{
 	width: 100%;
-	margin: 0 10rpx;
+	/* margin: 0 10rpx; */
 	color: #fff;
-	background: #0084ff;
+	background: #5886fc;
 	height: 40px;
-	border-radius: 3px;
+	border-radius: 20px;
 	font-size: 16px;
-	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+	font-family: GBK Regular;
+	line-height: 40px;
+	/* font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; */
 }
 .tip{
 	line-height: 1.5;
@@ -163,5 +183,40 @@
 	color: #8590a6;
 	font-size: 12px;
 }
-
+.statement{
+	position: fixed;
+	line-height: 2;
+	color: #333;
+	font-size: 12px;
+	bottom: 30px;
+	width: 80%;
+	text-align: center;
+	font-family: GBK Regular;
+}
+.icon{
+	height: 32rpx;
+	position: absolute;
+	width: 32rpx;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.connot-tip{
+	font-size: 12px;
+	position: absolute;
+	bottom: -60px;
+	line-height: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #333;
+	
+}
+.logo-bottom{
+	position: fixed;
+	bottom: 30px;
+	width: 216px;
+	height: 26px;
+	
+}
 </style>
